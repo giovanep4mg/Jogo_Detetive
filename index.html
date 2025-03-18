@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo Detetive</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header class="container_titulo">
+        <span><img src="./imagens/logo-detetive-1.jpg" alt="Logo da imagem de um detetive em preto e branco."></span>
+        <h1 class="titulo">Jogo Detetive</h1>
+        <span><img src="./imagens/logo-detetive-1.jpg" alt="Logo da imagem de um detetive em preto e branco."></span>
+    </header>
+    <main>
+        <section class="secao" id="regrasDoJogo">
+            <div class="descricao">
+                <h2 class="subtitulo">
+                    <span class="regras">Regras do jogo:</span> <br>
+                </h2>
+                <h3>
+                    Neste jogo, você sempre será o <strong>detetive</strong>! <br>
+                    Seu objetivo é descobrir quem é o assassino entre os nomes disponíveis. <br>
+                    Você tem 6 chances para acertar! <br>
+                    <br>
+                    Boa sorte! 🕵️‍♂️🔍 <br>
+                    <br>
+                </h3>
+            </div>
+            <div class="container_botaoInicioJogo">
+                <button class="botaoIniciar" type="button" onclick="iniciarJogo()">Iniciar jogo</button>
+            </div>
+        </section>
+
+        <section class="secao" id="mensagemAcertou" style="display: none;">
+            <p id="resultadoJogo"></p>
+            <!-- <div class="container_botaoReiniciar">
+                <button class="botaoReiniciar" type="button" onclick="reiniciarPagina()">Reiniciar</button>
+            </div>-->
+        </section>
+
+
+        <section class="secao" id="exibirNomes" style="display: none;">
+            <h2 class="subtitulo">Nome dos jogadores:</h2>
+            <div class="container_nomesJogadores">
+                <ul class="jogadores_UL" id="nomeJogadores"></ul>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        &copy; 2025 Giovani Teodoro Martins. Todos os direitos reservados.
+    </footer>
+
+    <script src="./javascript.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,158 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Garante altura total da tela */
+}
+
+@media screen and (max-width: 2561px) {
+    
+    main{
+        flex: 1;
+        padding: 1%;
+    }
+
+    .container_titulo{
+        background-color: #88c34fbf;
+        width: -webkit-fill-available;
+        padding: 1%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 4%;
+    }
+
+    .titulo{
+        font-family: cursive;
+        font-size: 9vw;
+        text-align: center;
+    }
+
+    .secao{
+        width: -webkit-fill-available;
+        border: 1px solid black;
+        padding: 1%;
+        background-color: aliceblue;
+    }
+
+    .descricao{
+        background-color: #6a91ba82;
+    }
+
+    .subtitulo{
+        font-family: cursive;
+        font-size: 3.5vw;
+        text-align: center;
+        padding-top: 1%;
+    }
+
+    strong{
+        font-weight: bolder;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .regras{
+        color: red;
+    }
+
+    h3{
+        font-size: 3vw;
+        text-align: center;
+        font-family: sans-serif;
+        padding-top: 3%;
+    }
+
+    .container_botaoInicioJogo{
+        margin-top: 1.5%;
+        display: flex;
+        justify-content: center;
+        width: -webkit-fill-available;
+    }
+
+    .botaoIniciar{
+        font-size: 5vw;
+        padding: 0.3rem;
+        text-align: center;
+        background-color: #14101ec9;
+        color: yellow;
+        width: 30%;
+        border: 1px solid black;
+        cursor: pointer;
+    }
+    .botaoIniciar:hov{
+        background-color: #100134ed;
+        color: #ffffc9;
+    }
+
+    .container_nomesJogadores{
+        background-color: cadetblue;
+        padding: 0.2rem;
+        width: 100%;
+    }
+
+    .jogadores_UL{
+        display: flex;
+        gap: 10%;
+        list-style-type: none;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 2vw;
+    }
+
+    p{
+        font-size: 5vw;
+        background-color: #ff000075;
+    }
+
+    li{
+        margin-bottom: 1.5%;
+        width: 16%;
+    }
+
+    .botaoSelecionar{
+        font-size: 4vw;
+        color: darkblue;
+        background-color: coral;
+        font-family: serif;
+        width: -webkit-fill-available;
+        cursor: pointer;
+    }
+    .botaoSelecionar:hover{
+        color: #4a0748;
+        background-color: #c6d42a;
+    }
+
+    .container_botaoReiniciar{
+        display: flex;
+        justify-content: center;
+    }
+
+    .botaoReiniciar{
+        font-size: 4vw;
+        border: 3px solid black;
+        margin-top: 2%;
+        width: 20%;
+        background-color: #6a2ba096;
+        color: white;
+        cursor: pointer;
+    }
+    .botaoReiniciar:hover{
+        background-color: #20389ec7;
+        color: #e0d006f7;
+    }
+
+    footer{
+        background-color: #222;
+        color: white;
+        text-align: center;
+        padding: 15px;
+        font-size: 2.5vw;
+    }
+    
+}
