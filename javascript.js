@@ -59,8 +59,17 @@ function verificarJogador(index) {
         //Exibir a seção que mostra o resultado
         document.getElementById("mensagemAcertou").style.display = "block";
 
-        // Exibir o resultado na pagina html
-        document.getElementById("resultadoJogo").innerHTML = `🎉 Parabéns! Você acertou! O assassino é ${assassino}`;
+        // Exibir o resultado na página HTML
+        let resultadoElemento = document.getElementById("resultadoJogo");
+        resultadoElemento.innerHTML = `🎉 Parabéns! Você acertou! O assassino é ${assassino}`;
+
+        // Alterar a cor de fundo
+        resultadoElemento.style.backgroundColor = "#4CAF50"; // Verde
+        resultadoElemento.style.color = "white"; // Texto branco para melhor contraste
+        resultadoElemento.style.padding = "15px"; // Adicionar espaço interno
+        resultadoElemento.style.borderRadius = "5px"; // Bordas arredondadas
+        resultadoElemento.style.textAlign = "center"; // Centralizar o texto
+
         reiniciarPagina();
     } else {
      //   alert(`❌ Você errou... ${jogadorSelecionado} não é o assassino!`);
@@ -85,7 +94,18 @@ function verificarJogador(index) {
             document.getElementById("mensagemAcertou").style.display = "block";
 
             // Exibir o resultado na pagina html
-            document.getElementById("resultadoJogo").innerHTML = "❌ Você perdeu... Suas tentativas acabaram!";
+           // document.getElementById("resultadoJogo").innerHTML = "❌ Você perdeu... Suas tentativas acabaram!";
+
+            // Exibir o resultado na página HTML
+            let resultadoSemTentativas = document.getElementById("resultadoJogo");
+            resultadoSemTentativas.innerHTML = "❌ Você perdeu... Suas tentativas acabaram!";
+
+            // Alterar a cor de fundo
+            resultadoSemTentativas.style.backgroundColor = "#FF5733"; // Vermelho
+            resultadoSemTentativas.style.color = "white"; // Texto branco para melhor contraste
+            resultadoSemTentativas.style.padding = "15px"; // Adicionar espaço interno
+            resultadoSemTentativas.style.borderRadius = "5px"; // Bordas arredondadas
+            resultadoSemTentativas.style.textAlign = "center"; // Centralizar o texto
             
             reiniciarPagina();
         }
