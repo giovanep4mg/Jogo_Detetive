@@ -68,6 +68,18 @@ body{
         padding-top: 3%;
     }
 
+    .container_mensagem_reinicio{
+        background-color: #100134ed;
+    }
+
+    .aviso_reiniciar{
+        color: #FF5733;
+        margin-top: 2%;
+        text-align: center;
+        padding: 1%;
+
+    }
+
     .container_botaoInicioJogo{
         margin-top: 1.5%;
         display: flex;

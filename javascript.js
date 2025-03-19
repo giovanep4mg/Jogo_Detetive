@@ -54,7 +54,10 @@ function verificarJogador(index) {
     let jogadorSelecionado = jogadores[index];
 
     if (jogadorSelecionado === assassino) {
-        // alert(`🎉 Parabéns! Você acertou! O assassino é ${assassino}`);
+
+        // Não vai exibir a seção que contém os nomes, que são botões
+        document.getElementById("exibirNomes").style.display = "none";
+        
         
         //Exibir a seção que mostra o resultado
         document.getElementById("mensagemAcertou").style.display = "block";
@@ -70,10 +73,12 @@ function verificarJogador(index) {
         resultadoElemento.style.borderRadius = "5px"; // Bordas arredondadas
         resultadoElemento.style.textAlign = "center"; // Centralizar o texto
 
+        // Exibir a mensagem de aviso, que vai reiniciar o jogo
+        document.getElementById("container_mensagem_reinicio").style.display = "block";
+
         reiniciarPagina();
     } else {
-     //   alert(`❌ Você errou... ${jogadorSelecionado} não é o assassino!`);
-
+     
         //Exibir a seção que mostra o resultado
         document.getElementById("mensagemAcertou").style.display = "block";
 
@@ -88,13 +93,13 @@ function verificarJogador(index) {
 
         if (tentativa === 0) {
 
-         //   alert("❌ Você perdeu... Suas tentativas acabaram!");
+            // Não vai exibir a seção que contém os nomes, que são botões
+            document.getElementById("exibirNomes").style.display = "none";
 
             //Exibir a seção que mostra o resultado
             document.getElementById("mensagemAcertou").style.display = "block";
 
-            // Exibir o resultado na pagina html
-           // document.getElementById("resultadoJogo").innerHTML = "❌ Você perdeu... Suas tentativas acabaram!";
+            
 
             // Exibir o resultado na página HTML
             let resultadoSemTentativas = document.getElementById("resultadoJogo");
@@ -106,6 +111,9 @@ function verificarJogador(index) {
             resultadoSemTentativas.style.padding = "15px"; // Adicionar espaço interno
             resultadoSemTentativas.style.borderRadius = "5px"; // Bordas arredondadas
             resultadoSemTentativas.style.textAlign = "center"; // Centralizar o texto
+
+            // Exibir a mensagem de aviso, que vai reiniciar o jogo
+            document.getElementById("container_mensagem_reinicio").style.display = "block";
             
             reiniciarPagina();
         }
